@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🌟 Interactive Web Page with JavaScript</h1>
+
+  <!-- Part 1: Event Handling Example -->
+  <section>
+    <h2>Event Handling Demo</h2>
+    <button id="messageBtn">Click Me</button>
+    <p id="messageArea"></p>
+  </section>
+
+  <!-- Part 2: Interactive Elements -->
+  <section>
+    <h2>Interactive Features</h2>
+
+    <!-- Light/Dark Mode -->
+    <button id="toggleTheme">Toggle Dark Mode 🌙</button>
+
+    <!-- Counter Game -->
+    <div>
+      <p>Counter: <span id="counter">0</span></p>
+      <button id="increaseBtn">Increase</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <!-- Collapsible FAQ -->
+    <div class="faq">
+      <h3 id="faqQuestion">What is JavaScript? ▼</h3>
+      <p id="faqAnswer" class="hidden">JavaScript is a programming language that makes web pages interactive!</p>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section>
+    <h2>Registration Form</h2>
+    <form id="registerForm">
+      <label>
+        Name:
+        <input type="text" id="name">
+      </label>
+      <small id="nameError" class="error"></small><br>
+
+      <label>
+        Email:
+        <input type="email" id="email">
+      </label>
+      <small id="emailError" class="error"></small><br>
+
+      <label>
+        Password:
+        <input type="password" id="password">
+      </label>
+      <small id="passwordError" class="error"></small><br>
+
+      <button type="submit">Register</button>
+    </form>
+    <p id="formSuccess" class="success"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
